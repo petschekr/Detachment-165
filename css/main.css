@@ -1,11 +1,13 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	font-family: "Open Sans";
 }
 
 /* https://coolors.co/313b4f-3a5a8d-213e6f-acccef-87aed9 */
 
 nav {
+	z-index: 10;
 	position: fixed;
 	display: block;
 	width: 100%;
@@ -47,7 +49,7 @@ section.primary {
 	height: 90%;
 	background-image: url("../img/hero-f22.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 70%;
+	background-position: 70% 70%;
 	background-size: cover;
 
 	display: flex;
@@ -58,6 +60,7 @@ section.primary {
 }
 
 main {
+	padding-top: 1rem;
 	background-color: white;
 }
 main::before {
@@ -65,6 +68,7 @@ main::before {
 	display: block;
 	z-index: 0;
 	background: inherit;
+	border-top: 3px solid #313b4f;
 
 	height: 50%;
 	width: 100%;
@@ -87,12 +91,31 @@ main::before {
 
 	background-color: rgb(255, 255, 255, 0.7);
 	color: #0e182d;
+	border-left: 10px solid;
 }
 .primary-background > h1 {
+	font-weight: bold;
 	font-size: 1.5em;
 	line-height: 0.95em;
 }
 .primary-background > h2 {
 	font-size: 1em;
 	line-height: 1.5em;
+}
+
+.column.logo {
+	padding: 1.5rem;
+	text-align: center;
+}
+
+blockquote {
+	text-align: justify;
+	font-size: 1.2rem;
+}
+blockquote > cite {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	margin: 10px 0;
+	font-family: "Titillium Web", sans-serif;
 }
