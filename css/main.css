@@ -1,0 +1,77 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+/* https://coolors.co/313b4f-3a5a8d-213e6f-acccef-87aed9 */
+
+nav {
+	position: fixed;
+	display: block;
+	width: 100%;
+
+	background-color: rgb(49, 59, 79, 0.95);
+	color: white !important;
+	border-bottom: 3px solid white;
+}
+
+nav > ul {
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+}
+
+nav > ul > li {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.75em;
+	text-transform: uppercase;
+	transition: transform 0.5s;
+}
+
+nav > ul > li > a {
+	color: white;
+	padding: 25px 15px;
+	transition: all 0.25s;
+	display: inline-block
+}
+nav > ul > li > a:hover {
+	color: white;
+	transform: scale(1.15);
+}
+
+section.primary {
+	height: 80%;
+	background-image: url("../img/hero-f22.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.primary-background {
+	width: 60%;
+	padding: 10px;
+
+	font-family: "Titillium Web", sans-serif;
+	font-size: 3em;
+	text-align: center;
+
+	background-color: rgb(255, 255, 255, 0.6);
+	color: #0e182d;
+}
+.primary-background > h1 {
+	font-size: 1.5em;
+	line-height: 0.95em;
+}
+.primary-background > h2 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
