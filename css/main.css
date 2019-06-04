@@ -44,16 +44,37 @@ nav > ul > li > a:hover {
 }
 
 section.primary {
-	height: 80%;
+	height: 90%;
 	background-image: url("../img/hero-f22.jpg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 50% 70%;
 	background-size: cover;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
+}
+
+main {
+	background-color: white;
+}
+main::before {
+	content: "";
+	display: block;
+	z-index: 0;
+	background: inherit;
+
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	bottom: -40%;
+	left: 0;
+	right: 0;
+
+	transform: skewY(2.5deg);
+	transform-origin: 100%;
 }
 
 .primary-background {
@@ -64,7 +85,7 @@ section.primary {
 	font-size: 3em;
 	text-align: center;
 
-	background-color: rgb(255, 255, 255, 0.6);
+	background-color: rgb(255, 255, 255, 0.7);
 	color: #0e182d;
 }
 .primary-background > h1 {
