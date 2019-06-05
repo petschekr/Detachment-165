@@ -100,7 +100,8 @@ main::before {
 }
 .primary-background > h2 {
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.1em;
+	margin-top: 5px;
 }
 
 .column.logo {
