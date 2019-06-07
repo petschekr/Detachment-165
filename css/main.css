@@ -32,6 +32,7 @@ nav > ul > li {
 	font-size: 1.75em;
 	text-transform: uppercase;
 	transition: transform 0.5s;
+	line-height: 0.5em;
 }
 
 nav > ul > li > a {
@@ -45,7 +46,7 @@ nav > ul > li > a:hover {
 	transform: scale(1.15);
 }
 
-section.primary {
+.primary {
 	height: 90%;
 	background-image: url("../img/hero-f22.jpg");
 	background-repeat: no-repeat;
@@ -125,7 +126,7 @@ header::after {
 	transform-origin: 100%;
 }
 
-section.secondary {
+.secondary {
 	width: 100%;
 	height: 70%;
 	border-bottom: 3px solid #434c5f;
@@ -172,19 +173,6 @@ main {
 }
 .faqs > .column:nth-child(2n) {
 	margin-left: 1%;
-}
-
-@media only screen and (max-width: 768px) {
-	.faqs > .column {
-		width: 100%;
-	}
-
-	.faqs > .column:nth-child(2n + 1) {
-		margin-right: 0;
-	}
-	.faqs > .column:nth-child(2n) {
-		margin-left: 0;
-	}
 }
 
 article {
@@ -280,4 +268,48 @@ article > a:hover::after {
 }
 .links > .column > a:hover {
 	transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+	nav {
+		position: static;
+	}
+	nav > ul {
+		flex-direction: column;
+	}
+	nav > ul > li {
+		line-height: 0;
+	}
+
+	.primary {
+		height: 70%;
+	}
+	.primary-background {
+		width: 95%;
+	}
+	.secondary {
+		height: 30%;
+	}
+
+	img {
+		max-width: 50%;
+	}
+
+	.faqs > .column {
+		width: 100%;
+	}
+	.faqs > .column:nth-child(2n + 1) {
+		margin-right: 0;
+	}
+	.faqs > .column:nth-child(2n) {
+		margin-left: 0;
+	}
+
+	.links {
+		margin-top: 6%;
+	}
+	.links > .column {
+		margin: 3% 0;
+		height: 250px;
+	}
 }
