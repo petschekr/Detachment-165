@@ -158,31 +158,31 @@ main {
 	color: white;
 }
 
-main > .container > .columns > .column {
+.faqs > .column {
 	background-color: #353849;
-	width: 48%;
+	width: 49%; /* 50% - margin-left or right */
 	padding: 0;
 	border-radius: 3px;
 	overflow: hidden;
 	margin-bottom: 2%;
 }
 
-main > .container > .columns > .column:nth-child(2n + 1) {
+.faqs > .column:nth-child(2n + 1) {
 	margin-right: 1%;
 }
-main > .container > .columns > .column:nth-child(2n) {
+.faqs > .column:nth-child(2n) {
 	margin-left: 1%;
 }
 
 @media only screen and (max-width: 768px) {
-	main > .container > .columns > .column {
+	.faqs > .column {
 		width: 100%;
 	}
 
-	main > .container > .columns > .column:nth-child(2n + 1) {
+	.faqs > .column:nth-child(2n + 1) {
 		margin-right: 0;
 	}
-	main > .container > .columns > .column:nth-child(2n) {
+	.faqs > .column:nth-child(2n) {
 		margin-left: 0;
 	}
 }
@@ -233,4 +233,51 @@ article > a:hover {
 article > a:hover::after {
 	width: 100%;
 	background: white;
+}
+
+.links > .column {
+	background-color: #353849;
+	padding: 0;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 0 1%;
+	height: 300px;
+}
+.links > .column:first-child {
+	margin-left: 0;
+}
+.links > .column:last-child {
+	margin-right: 0;
+}
+.links > .column > a {
+	display: block;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.5s;
+}
+.links > .t-38 > a {
+	background-image: url("../img/t38.jpg");
+}
+.links > .f-35 > a {
+	background-image: url("../img/f35.jpg");
+}
+.links > .a-10 > a {
+	background-image: url("../img/a10.jpg");
+}
+.links > .column > a > h2 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 2em;
+	text-align: center;
+
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #0e182d;
+	width: 100%;
+}
+.links > .column > a:hover {
+	transform: scale(1.2);
 }
