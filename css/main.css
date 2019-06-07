@@ -286,12 +286,13 @@ article > a:hover::after {
 	}
 	.primary-background {
 		width: 95%;
+		font-size: 2em;
 	}
 	.secondary {
 		height: 30%;
 	}
 
-	img {
+	header img {
 		max-width: 50%;
 	}
 
