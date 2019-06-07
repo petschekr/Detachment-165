@@ -270,6 +270,29 @@ article > a:hover::after {
 	transform: scale(1.2);
 }
 
+.contact > .column:first-child {
+	text-align: right;
+}
+.contact > .column > img {
+	height: 150px;
+}
+.contact > .column > h2, .contact > .column > h3 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 2em;
+	line-height: 1em;
+}
+.contact > .column > h3 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+footer > .container > p {
+	margin-bottom: 1em;
+}
+.sources {
+	font-size: 0.8em;
+	text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
 	nav {
 		position: static;
@@ -312,5 +335,9 @@ article > a:hover::after {
 	.links > .column {
 		margin: 3% 0;
 		height: 250px;
+	}
+
+	.contact > .column {
+		text-align: center !important;
 	}
 }
