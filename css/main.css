@@ -159,6 +159,9 @@ main {
 	color: white;
 }
 
+.faqs {
+	align-items: baseline;
+}
 .faqs > .column {
 	background-color: #353849;
 	width: 49%; /* 50% - margin-left or right */
@@ -179,7 +182,7 @@ article {
 	padding: 1.5rem;
 }
 article > h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
 	line-height: 1.1em;
@@ -190,6 +193,10 @@ article > h2 {
 }
 article > p {
 	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+article > small > p {
+	margin-top: 0.5rem;
 }
 article > a {
 	display: block;
@@ -221,6 +228,13 @@ article > a:hover {
 article > a:hover::after {
 	width: 100%;
 	background: white;
+}
+strong {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1em;
+	color: white;
 }
 
 .links > .column {
