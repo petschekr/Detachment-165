@@ -8,11 +8,25 @@
 		{{/if}}
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" />
+		{{#if local}}
+			<link rel="stylesheet" href="css/bulma.min.css" />
+			<link rel="stylesheet" href="css/fa-solid.min.css" />
+			<style>
+				@font-face {
+					font-family: "Open Sans";
+					src: url("css/Open Sans.ttf");
+				}
+				@font-face {
+					font-family: "Titillium Web";
+					src: url("css/Titillium Web.ttf");
+				}
+			</style>
+		{{else}}
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" />
+			<script src="https://kit.fontawesome.com/ac648668e6.js"></script>
+		{{/if}}
 		<link rel="stylesheet" href="css/main.css" />
-		<script src="https://kit.fontawesome.com/ac648668e6.js"></script>
-		<!-- https://coolors.co/313b4f-213e6f-3a5a8d-87aed9-acccef -->
 	</head>
 	<body>
 		<nav>
