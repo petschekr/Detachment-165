@@ -61,7 +61,7 @@ nav > ul > li > a:hover {
 }
 
 .primary-background {
-	width: 60%;
+	max-width: 90%;
 	padding: 10px;
 
 	font-family: "Titillium Web", sans-serif;
@@ -72,15 +72,25 @@ nav > ul > li > a:hover {
 	color: #0e182d;
 	border-left: 10px solid;
 }
-.primary-background > h1 {
+.primary-background > .column > h1 {
 	font-weight: bold;
 	font-size: 1.5em;
 	line-height: 0.95em;
 }
-.primary-background > h2 {
+.primary-background > .column > h2 {
 	font-size: 1em;
 	line-height: 1.1em;
 	margin-top: 5px;
+}
+.primary-background > .column:first-child {
+	display: flex;
+	justify-content: center;
+}
+.primary-background > .column:first-child > img {
+	max-height: 20vh;
+}
+.primary-background > .column:last-child {
+	text-align: left;
 }
 
 header::before {
@@ -322,8 +332,15 @@ footer > .container > p {
 		height: 70%;
 	}
 	.primary-background {
+		max-width: 100%;
 		width: 95%;
 		font-size: 2em;
+	}
+	.primary-background > .column:first-child {
+		display: none;
+	}
+	.primary-background > .column:last-child {
+		text-align: center;
 	}
 	.secondary {
 		height: 30%;
