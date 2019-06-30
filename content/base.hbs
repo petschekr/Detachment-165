@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{#if title}}
+			<title>{{title}} - AFROTC Detachment 165</title>
+		{{else}}
+			<title>AFROTC Detachment 165</title>
+		{{/if}}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{{#if local}}
+			<link rel="stylesheet" href="css/bulma.min.css" />
+			<link rel="stylesheet" href="css/fa-solid.min.css" />
+			<style>
+				@font-face {
+					font-family: "Open Sans";
+					src: url("css/Open Sans.ttf");
+				}
+				@font-face {
+					font-family: "Titillium Web";
+					src: url("css/Titillium Web.ttf");
+				}
+			</style>
+		{{else}}
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" />
+			<script src="https://kit.fontawesome.com/ac648668e6.js"></script>
+		{{/if}}
+		<link rel="stylesheet" href="css/main.css" />
+		{{#> head-block}}
+			{{!-- Custom header content can be included here --}}
+		{{/head-block}}
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Join</a></li>
+				<li><a href="#">Cadre and Staff</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+		{{> @partial-block}}
+
+		<footer class="footer">
+			<div class="container">
+				<div class="columns contact">
+					<div class="column">
+						<img src="img/logos/det.gif" alt="Detachment 165 logo" />
+					</div>
+					<div class="column">
+						<h2>AFROTC Detachment 165</h2>
+						<h3>Georgia Institute of Technology</h3>
+						<ul>
+							<li>
+								<span class="icon"><i class="fas fa-phone-alt"></i></span>
+								213-507-3548
+							</li>
+							<li>
+								<span class="icon"><i class="fas fa-envelope"></i></span>
+								<a href="mailto:recruiting@afrotc.gatech.edu">recruiting@afrotc.gatech.edu</a>
+							</li>
+							<li>
+								<span class="icon"><i class="fas fa-user-shield"></i></span>
+								<a href="#">Privacy and Security Notice</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="has-text-centered">Built with <span class="icon"><i class="fas fa-fighter-jet"></i></span> by the cadets of Detachment 165</p>
+				{{#> footer-block}}
+					{{!-- Additional footer content can be included here --}}
+				{{/footer-block}}
+			</div>
+		</footer>
+	</body>
+</html>
