@@ -113,6 +113,7 @@ main > .container > h1 {
 }
 
 .logo {
+	transition: background-size 0.5s;
 	display: block;
 	height: 15rem;
     background-size: 70%;
@@ -120,57 +121,49 @@ main > .container > h1 {
 	background-position: center;
 	margin-bottom: 0.5rem;
 }
-
+.logo:hover {
+	background-size: 85%;
+}
 .logo.kennesaw {
     background-image: url("../img/crosstowns/kennesaw.png");
     background-color: #ffc425;
 }
-
 .logo.georgia-state{
     background-image: url("../img/crosstowns/georgia_state.png");
     background-color: #005daa;
 }
-
 .logo.agnes-scott {
     background-image: url("../img/crosstowns/agnes-scott.gif");
     background-color: #fff2c8;
 }
-
 .logo.clayton-state {
     background-image: url("../img/crosstowns/clayton-state.png");
     background-color: #ff9231;
 }
-
 .logo.emory {
     background-image: url("../img/crosstowns/emory.png");
     background-color: #042144;
 }
-
 .logo.spelman {
     background-image: url("../img/crosstowns/spellman.png");
     background-color: #e6ecff;
 }
-
 .logo.oglethorpe {
     background-image: url("../img/crosstowns/oglethorpe.png");
     background-color: #fff;
 }
-
 .logo.morehouse {
     background-image: url("../img/crosstowns/morehouse.jpg");
     background-color: #fff;
 }
-
 .logo.clark-atlanta {
     background-image: url("../img/crosstowns/clark-atlanta.gif");
     background-color: #b1151b;
 }
-
 .logo.mercer {
     background-image: url("../img/crosstowns/mercer.png");
     background-color: #cb5307;
 }
-
 .logo.west-georgia {
     background-image: url("../img/crosstowns/west-georgia.gif");
     background-color: #3b5099;
@@ -199,5 +192,8 @@ main > .container > h1 {
 
 	.logo {
 		background-size: 25%;
+	}
+	.logo:hover {
+		background-size: 30%;
 	}
 }
