@@ -96,6 +96,86 @@ header > .container > h1 {
 	text-align: center;
 }
 
+main {
+	padding-top: 7rem !important;
+}
+main > .container > h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.colleges > .column {
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.logo {
+	display: block;
+	height: 15rem;
+    background-size: 70%;
+    background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 0.5rem;
+}
+
+.logo.kennesaw {
+    background-image: url("../img/crosstowns/kennesaw.png");
+    background-color: #ffc425;
+}
+
+.logo.georgia-state{
+    background-image: url("../img/crosstowns/georgia_state.png");
+    background-color: #005daa;
+}
+
+.logo.agnes-scott {
+    background-image: url("../img/crosstowns/agnes-scott.gif");
+    background-color: #fff2c8;
+}
+
+.logo.clayton-state {
+    background-image: url("../img/crosstowns/clayton-state.png");
+    background-color: #ff9231;
+}
+
+.logo.emory {
+    background-image: url("../img/crosstowns/emory.png");
+    background-color: #042144;
+}
+
+.logo.spelman {
+    background-image: url("../img/crosstowns/spellman.png");
+    background-color: #e6ecff;
+}
+
+.logo.oglethorpe {
+    background-image: url("../img/crosstowns/oglethorpe.png");
+    background-color: #fff;
+}
+
+.logo.morehouse {
+    background-image: url("../img/crosstowns/morehouse.jpg");
+    background-color: #fff;
+}
+
+.logo.clark-atlanta {
+    background-image: url("../img/crosstowns/clark-atlanta.gif");
+    background-color: #b1151b;
+}
+
+.logo.mercer {
+    background-image: url("../img/crosstowns/mercer.png");
+    background-color: #cb5307;
+}
+
+.logo.west-georgia {
+    background-image: url("../img/crosstowns/west-georgia.gif");
+    background-color: #3b5099;
+}
+
 @media only screen and (max-width: 768px) {
 	.timeline::after {
 		left: 15px;
@@ -115,5 +195,9 @@ header > .container > h1 {
 	}
 	.timeline-container.right {
 		left: 0;
+	}
+
+	.logo {
+		background-size: 25%;
 	}
 }
