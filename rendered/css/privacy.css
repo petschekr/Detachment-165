@@ -1,0 +1,27 @@
+.primary {
+	background-image: url("../img/flight.jpg");
+	background-position: center center;
+}
+.primary-background {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.primary-background > .column:first-child {
+	display: initial;
+	max-height: initial;
+	text-align: center;
+}
+
+header h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+/* This page is too short to have a <main> content section so get rid of the slant below the header */
+header::after {
+	content: none;
+}
+header {
+	border-bottom: 3px solid #434c5f;
+}

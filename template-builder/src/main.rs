@@ -42,6 +42,7 @@ fn main() {
         "join",
         "cadre",
         "contact",
+        "privacy",
     ];
     let config = Config {
         local: false,
