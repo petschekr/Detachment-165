@@ -40,6 +40,7 @@ fn main() {
         "index",
         "about",
         "join",
+        "cadre",
     ];
     let config = Config {
         local: false,

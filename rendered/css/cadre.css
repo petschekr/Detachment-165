@@ -1,0 +1,68 @@
+.primary {
+	background-image: url("../img/detail.jpg");
+	background-position: center center;
+}
+.primary-background > .column:first-child {
+	display: initial;
+	max-height: initial;
+	text-align: center;
+}
+
+header > .container > p {
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+
+main {
+	padding-top: 7rem !important;
+}
+main > .container > h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.card-image > figure {
+	height: 400px;
+	background-position: center center;
+	background-size: cover;
+}
+figure.silva {
+	background-image: url("../img/cadre/silva.jpg");
+}
+figure.clark {
+	background-image: url("../img/cadre/clark.jpg");
+}
+figure.brand {
+	background-image: url("../img/cadre/brand.jpg");
+}
+figure.babcock {
+	background-image: url("../img/cadre/babcock.jpg");
+}
+figure.davis {
+	background-image: url("../img/cadre/davis.jpg");
+}
+figure.cauley {
+	background-image: url("../img/cadre/cauley.jpg");
+}
+.card-content > h1, .card-content > h2 {
+	font-family: "Titillium Web", sans-serif;
+}
+.card-content > h1 {
+	font-size: 2.5rem;
+	margin-top: -1rem;
+}
+.card-content > h2 {
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	header > .container > p {
+		max-width: initial;
+	}
+}
