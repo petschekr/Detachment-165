@@ -1,0 +1,165 @@
+.primary {
+	background-image: url("../img/gmc.jpg");
+	background-position: center center;
+}
+.primary-background {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.primary-background > .column:first-child {
+	display: initial;
+	max-height: initial;
+	text-align: center;
+}
+
+h1, h2 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+}
+footer h2 {
+	text-align: left;
+}
+h2 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+ol {
+	font-size: 1.3rem;
+	max-width: 800px;
+	margin: 0 auto;
+	counter-reset: item;
+}
+ol > li {
+	display: block;
+}
+ol > li::before {
+	content: counter(item) ". ";
+	counter-increment: item;
+	font-weight: bold;
+}
+
+.semester-text {
+	text-decoration: underline;
+}
+.side-by-side {
+	width: 48% !important;
+	margin-top: 3em;
+	border: 3px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.column > h1 {
+	line-height: 3.2rem;
+}
+.side-by-side > p {
+	font-size: 1.2rem;
+	max-width: 75%;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+.side-by-side > .button {
+	color: white;
+}
+.side-by-side:first-child {
+	margin-right: 2%;
+}
+.side-by-side:last-child {
+	margin-left: 2%;
+}
+
+.current-semester {
+	border-color: #3a5a8d;
+}
+.current-semester > .button {
+	background-color: #3a5a8d;
+}
+.future-semester {
+	border-color: #434c5f;
+}
+.future-semester > .button {
+	background-color: #434c5f;
+}
+.cross-step-1, .cross-step-2 {
+	padding: 2em;
+}
+.cross-step-1 > p, .cross-step-2 > p {
+	max-width: 100%;
+}
+.cross-step-1 {
+	border-color: #003057;
+}
+.cross-step-1 > .button {
+	background-color: #003057;
+}
+.cross-step-2 {
+	border-color: #EAAA00;
+}
+.cross-step-2 > .button {
+	background-color: #EAAA00;
+}
+
+.date {
+	margin-top: 1em;
+}
+.date > p {
+	margin-top: 0.5em;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.calendar {
+	margin: 0 auto;
+	max-width: 200px;
+	text-align: center;
+}
+.calendar > .month {
+	padding: 0.25em 0;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	background-color: #FF4646;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.calendar > .day {
+	padding: 0.4em;
+	font-size: 3rem;
+	font-weight: bold;
+	color: black;
+	background-color: #D4D4D4;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+main {
+	padding-top: 7rem !important;
+}
+main > .container > h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+main a {
+	color: #acccef !important;
+	text-decoration: underline;
+}
+article > h2 {
+	font-size: 1.8rem;
+	text-align: left;
+}
+.questions {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.side-by-side {
+		width: initial !important;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}

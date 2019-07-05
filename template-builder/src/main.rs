@@ -39,6 +39,7 @@ fn main() {
     let files = [
         "index",
         "about",
+        "join",
     ];
     let config = Config {
         local: false,

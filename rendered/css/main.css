@@ -239,7 +239,7 @@ article > a:hover::after {
 	width: 100%;
 	background: white;
 }
-strong {
+main strong {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
 	font-size: 1.2em;
