@@ -22,7 +22,7 @@ nav > ul {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto;
 }
@@ -71,6 +71,9 @@ nav > ul > li > a:hover {
 	background-color: rgba(255, 255, 255, 0.7);
 	color: #0e182d;
 	border-left: 10px solid;
+}
+.primary-background > .column {
+	flex-basis: auto;
 }
 .primary-background > .column > h1 {
 	font-weight: bold;
