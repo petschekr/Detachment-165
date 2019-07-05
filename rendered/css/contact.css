@@ -1,0 +1,42 @@
+.primary {
+	background-image: url("../img/okeefe.jpg");
+	background-position: center center;
+}
+.primary-background {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.primary-background > .column:first-child {
+	display: initial;
+	max-height: initial;
+	text-align: center;
+}
+
+.panel {
+	text-align: center;
+	border-top: 3px solid  #313b4f;
+	box-shadow: 0 2px 7px 0 rgba(158, 158, 158, 0.5);
+	padding-bottom: 1rem;
+}
+.panel > h1 {
+	font-size: 5.5rem;
+}
+.panel > h2 {
+	font-size: 2rem;
+}
+.panel > h2 > a {
+	color: #4a4a4a;
+	border-bottom: 1px dashed #4a4a4a;
+}
+
+iframe {
+	width: 100%;
+	height: 500px;
+}
+
+/* This page is too short to have a <main> content section so get rid of the slant below the header */
+header::after {
+	content: none;
+}
+header {
+	border-bottom: 3px solid #434c5f;
+}
