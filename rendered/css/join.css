@@ -10,6 +10,9 @@
 	max-height: initial;
 	text-align: center;
 }
+.primary-background > .column > h2 {
+	font-weight: normal;
+}
 
 h1, h2 {
 	font-family: "Titillium Web", sans-serif;
