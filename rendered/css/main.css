@@ -175,7 +175,6 @@ main {
 .container.side-by-side {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 2rem;
 }
 .faqs {
 	display: flex;
@@ -252,6 +251,34 @@ main strong {
 	color: white;
 }
 
+.join-us {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+}
+.join-us > h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3.5rem;
+	margin-bottom: 1.5rem;
+}
+.join-us > .button {
+	margin-top: -0.5rem;
+	transition: all 0.25s;
+	background-color: transparent;
+	border-color: white;
+	font-family: "Titillium Web", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
+}
+.join-us > .button:hover {
+	background-color: white;
+	color: #0e182d;
+}
+.join-us > .button > .icon {
+	margin-left: 5px !important;
+}
 .links > .column {
 	background-color: #353849;
 	padding: 0;
@@ -313,6 +340,9 @@ main strong {
 	font-size: 2em;
 	line-height: 1em;
 }
+.contact > .column > h2 {
+	font-weight: bold;
+}
 .contact > .column > h3 {
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
@@ -326,6 +356,9 @@ footer > .container > p {
 }
 
 @media only screen and (max-width: 768px) {
+	h1 {
+		line-height: 1.1em;
+	}
 	nav {
 		position: static;
 	}
