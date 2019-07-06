@@ -15,8 +15,9 @@ header > .container > img {
 header > .container > h1 {
 	font-family: "Titillium Web", sans-serif;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 3.75rem;
 	margin-bottom: 2rem;
+	color: #363636;
 }
 
 
@@ -94,6 +95,35 @@ header > .container > h1 {
 .timeline-container > .content > h2 {
 	font-family: "Titillium Web", sans-serif;
 	text-align: center;
+}
+
+.testimonial {
+	align-items: center;
+}
+.testimonial > figure {
+	width: 20%;
+}
+.testimonial h2 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+.testimonial h3 {
+	margin-top: 0.25rem !important;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+}
+.testimonial .content > p {
+	text-align: justify;
+}
+.text-left > .content > h2, .text-left > .content > h3 {
+	text-align: right;
+}
+.media-left {
+	margin-right: 3rem;
+}
+.media-right {
+	margin-left: 3rem;
 }
 
 main {
@@ -188,6 +218,30 @@ main > .container > h1 {
 	}
 	.timeline-container.right {
 		left: 0;
+	}
+
+	.testimonial {
+		flex-direction: column;
+	}
+	.media-content > .content > h2, .media-content > .content > h3 {
+		text-align: center;
+	}
+	.testimonial > .media-right {
+		order: -1; /* Pull to top */
+	}
+	.testimonial > figure {
+		margin: 1rem 0;
+		width: auto;
+	}
+	.image.is-square {
+		padding-top: 0;
+		text-align: center;
+	}
+	.image.is-square > img {
+		position: static;
+		margin: 0 auto;
+		height: auto;
+		width: 100%;
 	}
 
 	.logo {
