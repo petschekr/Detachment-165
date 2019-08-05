@@ -29,11 +29,11 @@ main > .container > h1 {
 
 .card-image > figure {
 	height: 400px;
-	background-position: center center;
+	background-position: center top;
 	background-size: cover;
 }
-figure.silva {
-	background-image: url("../img/cadre/silva.jpg");
+figure.cumings {
+	background-image: url("../img/cadre/cumings.jpg");
 }
 figure.clark {
 	background-image: url("../img/cadre/clark.jpg");
@@ -44,21 +44,25 @@ figure.brand {
 figure.babcock {
 	background-image: url("../img/cadre/babcock.jpg");
 }
-figure.davis {
-	background-image: url("../img/cadre/davis.jpg");
-}
 figure.cauley {
 	background-image: url("../img/cadre/cauley.jpg");
+	background-position-x: 25%;
+}
+figure.demayo {
+	background-image: url("../img/cadre/demayo.jpg");
 }
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
 .card-content > h1 {
 	font-size: 2.5rem;
-	margin-top: -1rem;
+	line-height: 2.8rem;
+	margin-top: -0.5rem;
+	margin-bottom: 1rem;
 }
 .card-content > h2 {
 	font-size: 1.5rem;
+	line-height: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
