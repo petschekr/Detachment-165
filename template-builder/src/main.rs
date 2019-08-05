@@ -1,7 +1,7 @@
 use std::fs;
 use std::sync::mpsc::channel;
 use std::time::Duration;
-use handlebars::Handlebars;
+use handlebars::{ Handlebars, RenderContext, Helper, Context, HelperResult, Output };
 use serde::Serialize;
 use notify::{ Watcher, RecursiveMode, watcher };
 
@@ -19,6 +19,12 @@ impl Builder {
     fn new(config: Config) -> Self {
         let mut handlebars = Handlebars::new();
         handlebars.register_partial("base", fs::read_to_string("../content/base.hbs").unwrap()).unwrap();
+
+        handlebars.register_helper("date", Box::new(|_: &Helper, _: &Handlebars, _: &Context, _: &mut RenderContext, out: &mut dyn Output| -> HelperResult {
+            let date = chrono::Local::today();
+            out.write(&format!("{}", date.format("%b %Y")))?;
+            Ok(())
+        }));
 
         Self { handlebars, config }
     }

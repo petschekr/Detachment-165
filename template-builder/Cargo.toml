@@ -5,6 +5,7 @@ authors = ["Ryan Petschek <petschekr@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-handlebars = "1.1.0"
+handlebars = "2.0.1"
 serde = { version = "1", features = ["derive"] }
 notify = "4.0.12"
+chrono = "0.4"
