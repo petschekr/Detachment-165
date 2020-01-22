@@ -64,6 +64,9 @@ figure.demayo {
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 }
+.card {
+	height: 100%;
+}
 
 @media only screen and (max-width: 768px) {
 	header > .container > p {
