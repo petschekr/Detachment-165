@@ -320,6 +320,9 @@ main strong {
 .links > .thunderbirds > a {
 	background-image: url("../img/thunderbirds.jpg");
 }
+.links > .space-launch > a {
+	background-image: url("../img/space-launch.jpg");
+}
 .links > .column > a > h2 {
 	font-family: "Titillium Web", sans-serif;
 	font-size: 2em;
