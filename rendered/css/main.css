@@ -175,6 +175,20 @@ main {
 .container.side-by-side {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container.side-by-side > iframe {
+	width: 100%;
+	border-radius: 3px;
+	height: 40vh;
+	margin-bottom: 1rem;
+}
+.left-column {
+	padding-right: 0.5%;
+}
+.right-column {
+	padding-left: 0.5%;
 }
 .faqs {
 	display: flex;
@@ -183,7 +197,7 @@ main {
 }
 .faqs > .column {
 	flex: none;
-	width: 98%;
+	width: 100%;
 
 	background-color: #353849;
 	padding: 0;
