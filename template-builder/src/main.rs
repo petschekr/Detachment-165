@@ -49,6 +49,7 @@ fn main() {
         "cadre",
         "contact",
         "privacy",
+        "covid",
     ];
     let config = Config {
         local: false,
