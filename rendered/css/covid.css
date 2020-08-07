@@ -1,0 +1,38 @@
+.primary {
+	background-image: url("../img/roadway-crossing.jpg");
+	background-position: center center;
+}
+.primary-background > .column:first-child {
+	display: initial;
+	max-height: initial;
+	text-align: center;
+}
+
+.container ul {
+    list-style: disc;
+}
+
+header > .container > p {
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+
+main {
+	padding-top: 7rem !important;
+}
+main > .container > h1 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	header > .container > p {
+		max-width: initial;
+	}
+}
