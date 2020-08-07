@@ -8,11 +8,25 @@
 	text-align: center;
 }
 
-.container ul {
-    list-style: disc;
+h1, h2 {
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+}
+footer h2 {
+	text-align: left;
+}
+h2 {
+	font-size: 2rem;
+	line-height: 2rem;
 }
 
-header > .container > p {
+header > .container > ul {
+    list-style: disc inside none;
+}
+
+header > .container > p, header > .container > ul {
 	margin-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
@@ -30,9 +44,17 @@ main > .container > h1 {
 	font-size: 3rem;
 	margin-bottom: 1.5rem;
 }
+main a {
+	color: #acccef !important;
+	text-decoration: underline;
+}
+.questions {
+	font-size: 1.5rem;
+	text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
-	header > .container > p {
+	header > .container > p, header > .container > ul {
 		max-width: initial;
 	}
 }
