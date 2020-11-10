@@ -51,6 +51,12 @@ figure.cauley {
 figure.demayo {
 	background-image: url("../img/cadre/demayo.jpg");
 }
+figure.littleton {
+	background-image: url(../img/cadre/littleton.jpg);
+}
+figure.pham {
+	background-image: url(../img/cadre/pham.jpg);
+}
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
