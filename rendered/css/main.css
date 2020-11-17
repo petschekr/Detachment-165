@@ -141,12 +141,12 @@ header::after {
 
 .secondary {
 	width: 100%;
-	height: 70%;
+	height: 80%;
 	border-bottom: 3px solid #434c5f;
 
-	background-image: url("../img/skyline.jpg");
+	background-image: url("../img/det-logo.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 80%;
+	background-position: 50% 70%;
 	background-size: cover;
 }
 

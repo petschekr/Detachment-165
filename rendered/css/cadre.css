@@ -1,6 +1,7 @@
 .primary {
-	background-image: url("../img/detail.jpg");
+	background-image: url("../img/briefing-jsa.jpg");
 	background-position: center center;
+	background-position: 50% 90%;
 }
 .primary-background > .column:first-child {
 	display: initial;
