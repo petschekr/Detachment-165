@@ -16,6 +16,13 @@ process.on("unhandledRejection", err => {
 // Load .env file
 dotenv.config();
 
+export const COOKIE_OPTIONS = {
+	"path": "/",
+	"maxAge": 60 * 60 * 24 * 30 * 6, // 6 months
+	"secure": false, // Whether cookies can only be accessed over HTTPS - false because GT webhosting sometimes reverts to HTTP
+	"httpOnly": true
+} as cookieParser.CookieParseOptions;
+
 // Set up Express and its middleware
 export let app = express();
 
@@ -25,7 +32,7 @@ morgan.token("sessionid", (request: express.Request, response) => {
 		return FAILURE_MESSAGE;
 	}
 	let rawID: string = request.cookies["sessionid"].slice(2);
-	let id = cookieSignature.unsign(rawID, /*config.secrets.session*/ "TODO");
+	let id = cookieSignature.unsign(rawID, process.env.SESSION_SECRET || "");
 	if (typeof id === "string") {
 		return id;
 	}
@@ -58,20 +65,13 @@ morgan.format("requestlog", (tokens, request, response) => {
 
 // Middleware
 app.use(compression());
-app.use(cookieParser(undefined, {
-	"path": "/",
-	"maxAge": 60 * 60 * 24 * 30 * 6, // 6 months
-	"secure": false, // Whether cookies can only be accessed over HTTPS - false because GT webhosting sometimes reverts to HTTP
-	"httpOnly": true
-} as cookieParser.CookieParseOptions));
+app.use(cookieParser(undefined, COOKIE_OPTIONS));
 app.use(morgan("requestlog"));
 app.use(flash());
 
-// import "./auth/auth";
-
 // Auth needs to be the first route configured or else requests handled before it will always be unauthenticated
-// import { authRouter } from "./routes/auth";
-// app.use("/auth", authRouter);
+import { authRouter } from "./auth";
+app.use("/auth", authRouter);
 
 app.route("/version").get((request, response) => {
 	response.json({
