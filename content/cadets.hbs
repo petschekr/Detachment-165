@@ -1,0 +1,46 @@
+{{#> base title="Cadets"}}
+	{{#*inline "head-block"}}
+		<link rel="stylesheet" href="css/cadets.css" />
+	{{/inline}}
+
+	<section class="primary">
+		<div class="primary-background columns is-vcentered">
+			<div class="column">
+				<h1>Cadet Page</h1>
+				<h2>Detachment links and content</h2>
+			</div>
+		</div>
+	</section>
+
+	<header class="section">
+		<div class="container">
+			<div class="columns is-multiline">
+				<div class="column is-full">
+					<div class="message is-danger">
+						<div class="message-body">{{{error}}}</div>
+					</div>
+					<div class="message is-success">
+						<div class="message-body">{{{success}}}</div>
+					</div>
+				</div>
+			</div>
+			{{#if authenticated}}
+				<div class="columns is-multiline">
+					<div class="column is-full">
+						<h1>Example content</h1>
+					</div>
+					<div class="column is-full">
+						<h1>Example content 2</h1>
+					</div>
+				</div>
+				{{#if admin}}
+					<div class="columns is-multiline">
+						<div class="column is-full">
+							<h1>Admin</h1>
+						</div>
+					</div>
+				{{/if}}
+			{{/if}}
+		</div>
+	</header>
+{{/base}}

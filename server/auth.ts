@@ -50,12 +50,12 @@ app.use(session({
 	saveUninitialized: false
 }));
 
-enum UserType {
+export enum UserType {
 	NoAccess,
 	Viewer,
 	Admin,
 }
-interface User {
+export interface User {
 	id: string;
 	username: string;
 	type: UserType
@@ -99,11 +99,19 @@ abstract class CASStrategy {
 		// If `user` exists, the user has already logged in before and is good-to-go
 		let user = await db.asyncFindOne<User>({ username });
 
-		if (!user) {
+		// Promote users in the default admin list
+		let bootstrapAdmins = (process.env.ADMINS || "").split(/, ?/g); // Comma delimited list (space optional)
+
+		if (user && bootstrapAdmins.includes(user.username) && user.type !== UserType.Admin) {
+			user.type = UserType.Admin;
+			await db.asyncUpdate({ username }, user);
+		}
+		else if (!user) {
+			// Create new account
 			user = {
 				id: crypto.randomBytes(16).toString("hex"),
 				username,
-				type: UserType.NoAccess,
+				type: bootstrapAdmins.includes(username) ? UserType.Admin :  UserType.NoAccess,
 			};
 			await db.asyncInsert(user);
 		}
@@ -115,8 +123,8 @@ abstract class CASStrategy {
 		passport.use(this.name, this.passportStrategy);
 
 		authRoutes.get(`/${this.name}`, passport.authenticate(this.name, {
-			failureRedirect: "/",
-			successReturnToOrRedirect: "/",
+			failureRedirect: "/cadets",
+			successReturnToOrRedirect: "/cadets",
 			failureFlash: true
 		}));
 	}

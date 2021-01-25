@@ -56,6 +56,7 @@ export class Template<T> {
 }
 
 const AboutTemplate = new Template("about.hbs");
+const CadetsTemplate = new Template("cadets.hbs");
 const CadreTemplate = new Template("cadre.hbs");
 const ContactTemplate = new Template("contact.hbs");
 const CovidTemplate = new Template("covid.hbs");
@@ -96,20 +97,27 @@ uiRoutes.route("/privacy").get((request, response) => {
 	response.send(PrivacyTemplate.render());
 });
 
-/*uiRoutes.route("/login").get(async (request, response) => {
-	if (request.isAuthenticated() && request.user && (request.user as IUser).verifiedEmail) {
-		response.redirect("/");
-		return;
-	}
-	let templateData = {
-		title: "Log in",
-		includeJS: "login",
+import { UserType, User } from "./auth";
 
-		error: request.flash("error"),
+uiRoutes.route("/cadets").get(async (request, response) => {
+	let user = request.user as User | undefined;
+
+	let errorText = request.flash("error");
+
+	if (errorText.length == 0) {
+		if (!request.isAuthenticated()) {
+			errorText = ["You must log in with your Georgia Tech account to access this page"];
+		}
+		else if (user?.type === UserType.NoAccess) {
+			errorText = ["You have not been granted access to this page yet"]
+		}
+	}
+
+	let templateData = {
+		error: errorText,
 		success: request.flash("success"),
-		loginMethods: config.loginMethods,
-		localOnly: config.loginMethods && config.loginMethods.length === 1 && config.loginMethods[0] === "local",
-		email: request.session ? request.session.email : null,
+		authenticated: request.isAuthenticated() && user && user.type !== UserType.NoAccess,
+		admin: user?.type == UserType.Admin,
 	};
-	response.send(LoginTemplate.render(templateData));
-});*/
+	response.send(CadetsTemplate.render(templateData));
+});
