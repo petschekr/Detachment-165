@@ -1,5 +1,5 @@
 template-builder/target
-server/node_modules
-server/*.js
-server/.env
-server/db/
+rendered/server/node_modules
+rendered/server/*.js
+rendered/server/.env
+rendered/server/db/
