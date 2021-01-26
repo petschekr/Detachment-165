@@ -373,6 +373,20 @@ main strong {
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
 }
+
+footer > .container > .login {
+	text-align: center;
+	margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+footer > .container > .login > .button {
+	font-family: "Titillium Web", sans-serif;
+	text-transform: uppercase;
+}
+footer > .container > .login > .button > .icon {
+	margin-left: 5px !important;
+}
+
 footer > .container > p {
 	margin-bottom: 1em;
 }

@@ -1,1 +1,5 @@
 template-builder/target
+rendered/node_modules
+rendered/*.js
+rendered/.env
+rendered/db/

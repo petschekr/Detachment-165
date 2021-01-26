@@ -43,12 +43,12 @@
 	<body>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="join.html">Join</a></li>
-				<li><a href="cadre.html">Cadre and Staff</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="covid.html">COVID-19 Info</a></li>
+				<li><a href="/index">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/join">Join</a></li>
+				<li><a href="/cadre">Cadre and Staff</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/covid">COVID-19 Info</a></li>
 			</ul>
 		</nav>
 
@@ -74,7 +74,7 @@
 							</li>
 							<li>
 								<span class="icon"><i class="fas fa-user-shield"></i></span>
-								<a href="privacy.html">Privacy and Security Notice</a>
+								<a href="/privacy">Privacy and Security Notice</a>
 							</li>
 							<li>
 								<span class="icon"><i class="fas fa-history"></i></span>
@@ -82,6 +82,13 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="login">
+					{{#if authenticated}}
+						<a class="button is-dark" href="/auth/logout">Logout <span class="icon"><i class="fas fa-sign-out-alt"></i></span></a>
+					{{else}}
+						<a class="button is-dark" href="/auth/gatech">Cadet log in <span class="icon"><i class="fas fa-sign-in-alt"></i></span></a>
+					{{/if}}
 				</div>
 				<p class="has-text-centered">Built with <span class="icon"><i class="fas fa-fighter-jet"></i></span> by Detachment 165</p>
 				{{#> footer-block}}
