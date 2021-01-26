@@ -1,5 +1,5 @@
 .primary {
-	background-image: url("../img/roadway-crossing.jpg");
+	background-image: url("../img/flight-jsa.jpg");
 	background-position: center center;
 }
 .primary-background > .column:first-child {
@@ -8,7 +8,7 @@
 	text-align: center;
 }
 
-h1, h2 {
+.container > h1, .container > h2 {
 	font-family: "Titillium Web", sans-serif;
 	text-align: center;
 	font-size: 3rem;
@@ -17,7 +17,7 @@ h1, h2 {
 footer h2 {
 	text-align: left;
 }
-h2 {
+.container > h2 {
 	font-size: 2rem;
 	line-height: 2rem;
 }
