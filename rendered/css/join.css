@@ -1,7 +1,6 @@
 .primary {
 	background-image: url("../img/gmc.jpg");
 	background-position: center center;
-	background-position: 50% 40%;
 }
 .primary-background {
 	background-color: rgba(255, 255, 255, 0.8);
