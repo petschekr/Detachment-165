@@ -1,1 +1,5 @@
 template-builder/target
+server/node_modules
+server/*.js
+server/.env
+server/db/
