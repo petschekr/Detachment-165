@@ -97,7 +97,7 @@ uiRoutes.route("/privacy").get((request, response) => {
 	response.send(PrivacyTemplate.render());
 });
 
-import { UserType, User } from "./auth";
+import { UserType, User, db } from "./auth";
 
 uiRoutes.route("/cadets").get(async (request, response) => {
 	let user = request.user as User | undefined;
@@ -113,11 +113,24 @@ uiRoutes.route("/cadets").get(async (request, response) => {
 		}
 	}
 
+	function sortByUsername(users: User[]): User[] {
+		return users.sort((a, b) => {
+			if (a.username < b.username) return -1;
+			if (a.username > b.username) return 1;
+			return 0;
+		});
+	}
+
 	let templateData = {
 		error: errorText,
 		success: request.flash("success"),
 		authenticated: request.isAuthenticated() && user && user.type !== UserType.NoAccess,
 		admin: user?.type == UserType.Admin,
+		users: {
+			noAccess: sortByUsername(await db.asyncFind({ type: UserType.NoAccess })),
+			viewer: sortByUsername(await db.asyncFind<User>({ type: UserType.Viewer })),
+			admin: sortByUsername(await db.asyncFind<User>({ type: UserType.Admin })),
+		}
 	};
 	response.send(CadetsTemplate.render(templateData));
 });

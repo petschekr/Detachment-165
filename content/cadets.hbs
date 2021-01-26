@@ -25,18 +25,73 @@
 				</div>
 			</div>
 			{{#if authenticated}}
+				{{!-- Consider making the authenticated content a subblock --}}
 				<div class="columns is-multiline">
 					<div class="column is-full">
-						<h1>Example content</h1>
+						<h1>Example cadet-only content</h1>
 					</div>
 					<div class="column is-full">
-						<h1>Example content 2</h1>
+						<h1>Example cadet-only content 2</h1>
 					</div>
 				</div>
 				{{#if admin}}
 					<div class="columns is-multiline">
 						<div class="column is-full">
-							<h1>Admin</h1>
+							<h1>User Access</h1>
+							<table class="table is-fullwidth admin-table">
+								<thead>
+									<tr>
+										<th>Username</th>
+										<th>View access?</th>
+										<th>Admin?</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									{{#each users.noAccess}}
+									<tr>
+										<td>{{this.username}}</td>
+										<td><span class="icon"><i class="fas fa-times"></i></span></td>
+										<td><span class="icon"><i class="fas fa-times"></i></span></td>
+										<td>
+											<form action="/api/access" method="POST">
+												<input type="hidden" name="username" value="{{this.username}}" />
+												<button class="button is-success is-outlined" type="submit" name="action" value="grant">Grant view access</button>
+												<button class="button is-danger is-outlined" type="submit" name="action" value="deny">Deny access</button>
+											</form>
+										</td>
+									</tr>
+									{{/each}}
+									{{#each users.viewer}}
+									<tr>
+										<td>{{this.username}}</td>
+										<td><span class="icon"><i class="fas fa-check"></i></span></td>
+										<td><span class="icon"><i class="fas fa-times"></i></span></td>
+										<td>
+											<form action="/api/access" method="POST">
+												<input type="hidden" name="username" value="{{this.username}}" />
+												<button class="button is-info is-outlined" type="submit" name="action" value="admin">Make admin</button>
+												<button class="button is-danger is-outlined" type="submit" name="action" value="deny">Delete</button>
+											</form>
+										</td>
+									</tr>
+									{{/each}}
+									{{#each users.admin}}
+									<tr>
+										<td>{{this.username}}</td>
+										<td><span class="icon"><i class="fas fa-check"></i></span></td>
+										<td><span class="icon"><i class="fas fa-check"></i></span></td>
+										<td>
+											<form action="/api/access" method="POST">
+												<input type="hidden" name="username" value="{{this.username}}" />
+												<button class="button is-danger is-outlined" type="submit" name="action" value="demote">Demote to viewer</button>
+											</form>
+										</td>
+									</tr>
+									{{/each}}
+								</tbody>
+							</table>
+							</form>
 						</div>
 					</div>
 				{{/if}}

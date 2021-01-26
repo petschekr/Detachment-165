@@ -61,7 +61,8 @@ export interface User {
 	type: UserType
 }
 
-const db = new NeDB({ filename: "db/users.db", autoload: true });
+export const db = new NeDB({ filename: "db/users.db", autoload: true });
+db.persistence.setAutocompactionInterval(1000 * 60 * 5); // Prune database every 5 minutes
 
 passport.serializeUser((user, done) => {
 	done(null, (user as User).id);

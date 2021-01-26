@@ -73,6 +73,9 @@ app.use(flash());
 import { authRouter } from "./auth";
 app.use("/auth", authRouter);
 
+import { apiRouter } from "./api";
+app.use("/api", apiRouter);
+
 import { uiRoutes } from "./templates";
 app.use("/", uiRoutes);
 
