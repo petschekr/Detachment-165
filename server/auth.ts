@@ -45,7 +45,8 @@ app.use(session({
 	cookie: COOKIE_OPTIONS as session.CookieOptions,
 	resave: false,
 	store: new NeDBStore({
-		filename: "db/sessions.db"
+		filename: "db/sessions.db",
+		autoCompactInterval: 1000 * 60 * 5 // Every 5 minutes
 	}),
 	saveUninitialized: false
 }));
