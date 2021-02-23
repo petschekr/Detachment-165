@@ -13,3 +13,10 @@
 -- To get people access:
 1. Ask OFC to email GT Plesk
 
+--Template Builder
+1. Go to directory (template-builder)
+2. Make the hbs file change
+to see locally:
+3. cargo run
+4. Grab html file to see the changes locally
+push
