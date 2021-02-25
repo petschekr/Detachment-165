@@ -56,6 +56,7 @@ export class Template<T> {
 }
 
 const AboutTemplate = new Template("about.hbs");
+const AfscsTemplate = new Template("afscs.hbs");
 const CadetsTemplate = new Template("cadets.hbs");
 const CadreTemplate = new Template("cadre.hbs");
 const ContactTemplate = new Template("contact.hbs");
@@ -68,6 +69,10 @@ export let uiRoutes = express.Router();
 
 uiRoutes.route("/about").get((request, response) => {
 	response.send(AboutTemplate.render());
+});
+
+uiRoutes.route("/afscs").get((request, response) => {
+	response.send(AfscsTemplate.render());
 });
 
 uiRoutes.route("/cadre").get((request, response) => {
