@@ -45,6 +45,7 @@ fn main() {
     let files = [
         "index",
         "about",
+        "afscs",
         "join",
         "cadre",
         "contact",
