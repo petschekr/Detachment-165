@@ -2,8 +2,8 @@
 This is the git repository used for the official Detachment 165 page located at afrotc.gatech.edu. If you are new to working with websites and you have been voluntold to help out with this one, do not fear! For your friendly README is here!
 
 ## Table of Contents
-[Getting Started](#getting-started)
-[Deployment](#deployment)
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
 
 ## Getting Started
 1) Clone the git repository 
@@ -26,6 +26,8 @@ Note: the -g tells npm to install typescript so it can be accessed globally
 This command will compile all typescript files into javascript files. Basically, all files ending in .ts will have another file created with the same name but with the ending .js
 
 6) Copy the .env.example file to a new file called .env
+Windows: `copy .env.example .env`
+Linux/Mac: `cp .env.example .env`
 
 7) Run local server
 `node app.js`
