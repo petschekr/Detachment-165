@@ -1,6 +1,6 @@
 .primary {
-	background-image: url("../img/detail.jpg");
-	background-position: 50% 90%;
+	background-image: url("../img/cadre/staff.jpg");
+	background-position: 60%;
 }
 .primary-background > .column:first-child {
 	display: initial;
