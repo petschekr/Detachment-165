@@ -36,10 +36,10 @@ Linux/Mac: `cp .env.example .env`
 
 ## Deployment
 At the time of this README being written. The Detachment-165 project is currently being hosted using GT hosting services with a Plesk server. If you are on Georgia Tech campus, or have access to the [campus VPN](https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn), you can go to hosting.gatech.edu, login with your GT account, go to Plesk Web Admin, and click on afrotc.gatech.edu under the Plesk control panel. If you do not have access to the to the control panel or the afrotc.gatech.edu you should contact one of these people: 
-Captain Babcock cbabcock6@gatech.edu
-Terrell Caldwell tcaldwell30@gatech.edu
-Miguel Garcia mgarcia75@gatech.edu
-Yours Truly, Kyser Montalvo - kmontalvo3@gatech.edu
+- Captain Babcock cbabcock6@gatech.edu
+- Terrell Caldwell tcaldwell30@gatech.edu
+- Miguel Garcia mgarcia75@gatech.edu
+- Yours Truly, Kyser Montalvo - kmontalvo3@gatech.edu
 
 And one of us should be able to get you access to the plesk server. 
 
