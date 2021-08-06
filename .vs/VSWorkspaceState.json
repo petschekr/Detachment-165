@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\content"
+    "\\content",
+    "\\rendered"
   ],
-  "SelectedNode": "\\content\\about.hbs",
+  "SelectedNode": "\\rendered\\img",
   "PreviewInSolutionExplorer": false
 }
