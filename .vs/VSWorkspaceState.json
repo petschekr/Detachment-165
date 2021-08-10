@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\content",
-    "\\rendered"
+    "\\rendered",
+    "\\rendered\\css",
+    "\\rendered\\img",
+    "\\rendered\\img\\cadre"
   ],
-  "SelectedNode": "\\rendered\\img",
+  "SelectedNode": "\\rendered\\img\\cadre\\shannon.jpg",
   "PreviewInSolutionExplorer": false
 }
