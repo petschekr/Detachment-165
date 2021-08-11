@@ -3,3 +3,5 @@ rendered/node_modules
 rendered/*.js
 rendered/.env
 rendered/db/
+.vs/
+.vscode/
