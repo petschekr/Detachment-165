@@ -57,6 +57,9 @@ figure.littleton {
 figure.pham {
 	background-image: url(../img/cadre/pham.jpg);
 }
+figure.shannon {
+	background-image: url(../img/cadre/shannon.jpg);
+}
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
