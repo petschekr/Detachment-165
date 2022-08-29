@@ -60,6 +60,18 @@ figure.pham {
 figure.shannon {
 	background-image: url(../img/cadre/shannon.jpg);
 }
+figure.spear {
+	background-image: url(../img/cadre/spear.png);
+}
+figure.morgan {
+	background-image: url(../img/cadre/morgan.jpg);
+}
+figure.crump {
+	background-image: url(../img/cadre/crump.png)
+}
+figure.wallner {
+	background-image: url(../img/cadre/wallner.jpg)
+}
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
