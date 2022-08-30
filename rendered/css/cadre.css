@@ -52,13 +52,25 @@ figure.demayo {
 	background-image: url("../img/cadre/demayo.jpg");
 }
 figure.littleton {
-	background-image: url(../img/cadre/littleton.jpg);
+	background-image: url("../img/cadre/littleton.jpg");
 }
 figure.pham {
-	background-image: url(../img/cadre/pham.jpg);
+	background-image: url("../img/cadre/pham.jpg");
 }
 figure.shannon {
-	background-image: url(../img/cadre/shannon.jpg);
+	background-image: url("../img/cadre/shannon.jpg");
+}
+figure.spear {
+	background-image: url("../img/cadre/spear.jpg");
+}
+figure.morgan {
+	background-image: url("../img/cadre/morgan.jpg");
+}
+figure.crump {
+	background-image: url("../img/cadre/crump.jpg")
+}
+figure.wallner {
+	background-image: url("../img/cadre/wallner.jpg")
 }
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
