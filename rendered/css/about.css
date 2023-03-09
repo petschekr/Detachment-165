@@ -97,6 +97,9 @@ header > .container > h1 {
 	text-align: center;
 }
 
+.testimonials {
+	margin-top: 4rem;
+}
 .testimonial {
 	align-items: center;
 }
