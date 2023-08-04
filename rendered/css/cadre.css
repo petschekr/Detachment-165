@@ -72,6 +72,9 @@ figure.crump {
 figure.wallner {
 	background-image: url("../img/cadre/wallner.jpg")
 }
+figure.sharbell {
+	background-image: url("../img/cadre/sharbell.jpg")
+}
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
