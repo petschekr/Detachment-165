@@ -74,7 +74,10 @@ figure.wallner {
 }
 figure.sharbell {
 	background-image: url("../img/cadre/sharbell.jpg")
-}
+	}
+figure.groenheim {
+	background-image: url("../img/cadre/groenheim.jpg")
+	}
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
 }
