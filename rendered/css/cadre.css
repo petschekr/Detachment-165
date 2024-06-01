@@ -32,6 +32,9 @@ main > .container > h1 {
 	background-position: center top;
 	background-size: cover;
 }
+figure.sharbel{
+	background-image: url(../img/cadre/sharbel.png)
+}
 figure.cumings {
 	background-image: url("../img/cadre/cumings.jpg");
 }
@@ -72,8 +75,8 @@ figure.crump {
 figure.wallner {
 	background-image: url("../img/cadre/wallner.jpg")
 }
-figure.sharbell {
-	background-image: url("../img/cadre/sharbell.jpg")
+figure.groenheim{
+	background-image: url("../img/cadre/groenheim.jpg")
 }
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
