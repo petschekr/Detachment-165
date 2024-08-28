@@ -144,9 +144,9 @@ header::after {
 	height: 70%;
 	border-bottom: 3px solid #434c5f;
 
-	background-image: url("../img/skyline.jpg");
+	background-image: url("../img/formation_gmc.JPG");
 	background-repeat: no-repeat;
-	background-position: 50% 80%;
+	background-position: 50% 40%;
 	background-size: cover;
 }
 
