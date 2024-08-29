@@ -33,7 +33,7 @@ main > .container > h1 {
 	background-size: cover;
 }
 figure.sharbel{
-	background-image: url(../img/cadre/sharbel.png)
+	background-image: url(../img/cadre/Lt\ Col\ Sharbel.jpeg)
 }
 figure.cumings {
 	background-image: url("../img/cadre/cumings.jpg");
@@ -70,13 +70,25 @@ figure.morgan {
 	background-image: url("../img/cadre/morgan.jpg");
 }
 figure.crump {
-	background-image: url("../img/cadre/crump.jpg")
+	background-image: url("../img/cadre/Mrs.\ Carolyn\ Crump.jpeg")
 }
 figure.wallner {
 	background-image: url("../img/cadre/wallner.jpg")
 }
 figure.groenheim{
-	background-image: url("../img/cadre/groenheim.jpg")
+	background-image: url("../img/cadre/TSgt\ Christopher\ Groenheim.jpeg")
+}
+figure.brown{
+	background-image: url("../img/cadre/Capt\ Donnell\ Brown.jpeg")
+}
+figure.echols{
+	background-image: url("../img/cadre/Capt\ Quintin\ Echols.jpeg")
+}
+figure.heard{
+	background-image: url("../img/cadre/Capt\ Jordan\ Heard.jpeg")
+}
+figure.sibley{
+	background-image: url("../img/cadre/SSgt\ Niambi\ Sibley.jpeg")
 }
 .card-content > h1, .card-content > h2 {
 	font-family: "Titillium Web", sans-serif;
